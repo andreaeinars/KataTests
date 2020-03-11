@@ -10,6 +10,12 @@ def Add(numbers):
     
     number_list=[int(i) for i in number_list]
 
-    return sum(number_list)
+    updated_list=[]
+
+    for i in number_list:
+        if i<=1000:
+            updated_list.append(i)
+
+    return sum(updated_list)
 
 
