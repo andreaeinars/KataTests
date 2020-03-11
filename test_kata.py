@@ -15,3 +15,7 @@ def test_unknown_num_of_digits():
     assert Add("10,2,5,22,1,1")==41
 
 
+def test_wit_comma_and_newline():
+    assert Add("1\n2,3")==6
+
+
