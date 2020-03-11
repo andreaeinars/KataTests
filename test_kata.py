@@ -29,4 +29,10 @@ def test_negatives():
     with pytest.raises(ValueError, match=r"Negatives not allowed:-4,-5"):
         Add("2,-4,3,-5")
 
+
+def test_new_delimeter():
+    assert Add("//X\n1X2") == 3
+
+    assert Add("//%\n1%2%3")==6
+
     
